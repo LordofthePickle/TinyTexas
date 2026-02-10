@@ -4,7 +4,7 @@ function App () {
     const [msg, setMsg] = useState<string>("")
 
     useEffect(() => {
-        fetch("/api/hello")
+        fetch("/api/main")
             .then(res => res.text())
             .then(setMsg)
             .catch(err => setMsg("Error: " + err.message));
